@@ -1,0 +1,97 @@
+/* Reset + Fullscreen Setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Wrapper holds the entire app and centers */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Layout before and after translation */
+.center-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.split-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+/* Form box */
+.form-box {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  width: 350px;
+}
+
+/* Title with icon */
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+select, input[type="file"], button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Translated output */
+.output-box {
+  background-color: #1e1e1e;
+  border-left: 2px solid #444;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1;
+  max-width: 600px;
+  overflow-y: auto;
+}
+
+.translated-text {
+  margin-top: 15px;
+  white-space: pre-wrap;
+}
